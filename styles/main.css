@@ -139,7 +139,7 @@ body {
 
 .about-hero {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .skills-grid {
@@ -463,6 +463,13 @@ img {
     font-style: normal;
     font-weight: normal;
     font-size: smaller;
+}
+
+.resume-item .summary-content {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: normal;
 }
 
 /* Responsive adjustments for resume header */
