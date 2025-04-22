@@ -358,7 +358,7 @@ img {
 
 /* Resume Section */
 .resume-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: var(--surface-color);
     padding: 2rem;
     border-radius: 0.5rem;
@@ -366,7 +366,7 @@ img {
 }
 
 .resume-item {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--accent-color);
 }
@@ -443,6 +443,26 @@ img {
 
 .resume-header .btn i {
     font-size: 1rem;
+}
+
+.resume-item .degree-name {
+    color: var(--text-color);
+    font-style:italic;
+    font-weight: normal;
+}
+
+.resume-item .degree-concentration {
+    color: var(--text-color);
+    font-style:normal;
+    font-weight: normal;
+    font-size: smaller;
+}
+
+.resume-item .expected-graduation {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: smaller;
 }
 
 /* Responsive adjustments for resume header */
