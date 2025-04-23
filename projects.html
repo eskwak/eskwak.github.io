@@ -6,6 +6,7 @@
     <title>Projects - Eddie Kwak</title>
     <link rel="stylesheet" href="styles/main.css">
     <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -23,30 +24,53 @@
     </nav>
 
     <main class="projects-container">
-        <h1>My Projects</h1>
+        <h1>Projects</h1>
         <div class="projects-grid">
-            <!-- Project Card Template -->
+            <!-- Start of individual project card -->
             <article class="project-card">
                 <div class="project-image">
-                    <img src="images/placeholder-profile-picture.png" alt="Project 1">
+                    <img src="projects/Centipede/Centipede_gif.gif" alt="Centipede">
                 </div>
                 <div class="project-content">
                     <h3>Centipede</h3>
-                    <p>Classic arcade Centipede game developed in C++.</p>
-                    <div class="project-tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">SFML</span>
-                    </div>
-                    <div class="project-links">
-                        <!-- <a href="projects/project1.html" class="btn primary">Learn More</a> -->
-                        <a href="https://github.com/eskwak/Centipede" target="_blank" class="btn primary">
-                            <i class="fab fa-github"></i> Learn More
-                        </a>
+                    <!-- <p class="project-description">
+                        Classic arcade Centipede game
+                    </p> -->
+                    <div class="project-footer">
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">SFML</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- <a href="projects/Centipede/Centipede_gif.gif" class="btn primary">View</a> -->
+                            <a href="https://github.com/eskwak/Centipede" target="_blank" class="btn primary">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </article>
-
-            <!-- Add more project cards as needed -->
+            <!-- End of individual project card -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="images/placeholder-profile-picture.png" alt="Game Of Life">
+                </div>
+                <div class="project-content">
+                    <h3>John Conway's Game of Life</h3>
+                    <div class="project-footer">
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">SFML</span>
+                            <span class="tag">OpenMP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="add link to project here" target="_blank" class="btn primary">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
     </main>
 
