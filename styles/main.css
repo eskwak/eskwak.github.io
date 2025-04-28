@@ -598,6 +598,8 @@ img {
     max-width: 1000px;
     margin: 40px auto;
     padding: 40px 0;
+    display: block;
+    overflow: hidden;
 }
 
 .timeline::before {
@@ -609,22 +611,26 @@ img {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .timeline-item {
     width: calc(50% - 30px);
     margin-bottom: 40px;
     position: relative;
+    float: left;
 }
 
 .timeline-item:nth-child(odd) {
     float: left;
     clear: both;
+    margin-right: 30px;
 }
 
 .timeline-item:nth-child(even) {
     float: right;
     clear: both;
+    margin-left: 30px;
 }
 
 .timeline-content {
@@ -647,6 +653,7 @@ img {
     top: 50%;
     transform: translateY(-50%);
     box-shadow: 0 0 0 3px var(--primary-color);
+    z-index: 2;
 }
 
 /* Position dots */
@@ -677,7 +684,7 @@ img {
     margin: 5px 0;
 }
 
-/* Clear fix for floating elements */
+/* Clear fix */
 .timeline::after {
     content: '';
     display: table;
@@ -692,12 +699,14 @@ img {
 
     .timeline-item {
         width: calc(100% - 60px);
-        margin-left: 60px;
+        float: none;
+        margin: 0 0 40px 60px;
     }
 
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         float: none;
+        margin: 0 0 40px 60px;
     }
 
     .timeline-item:nth-child(odd) .timeline-content::after,
