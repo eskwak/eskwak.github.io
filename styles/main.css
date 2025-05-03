@@ -91,7 +91,31 @@ body {
 }
 
 .highlight {
-    color: var(--primary-color);
+    background: linear-gradient(
+        90deg,
+        #9b7b1a 0%,
+        #ffd700 25%,
+        #9b7b1a 50%,
+        #ffd700 75%,
+        #9b7b1a 100%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 4s ease-in-out infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: 0% center;
+    }
 }
 
 /* Buttons */
