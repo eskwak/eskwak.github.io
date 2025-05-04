@@ -639,7 +639,7 @@ img {
 }
 
 .timeline-item {
-    width: calc(50% - 30px);
+    width: calc(50% - 26px);
     margin-bottom: 40px;
     position: relative;
     float: left;
