@@ -201,8 +201,9 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
   object-fit: contain;
 }
 
-.item-content {
-  flex: 1;
+.item-content p {
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
 }
 
 .item-header{
