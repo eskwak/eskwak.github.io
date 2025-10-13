@@ -2,7 +2,7 @@
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #6b7280;
-  --gold: #f7d76f; /* vibrant gold */
+  --gold: #f5dc8c; 
   --edge: rgba(0,0,0,0.08);
   --ring: rgba(179,163,105,0.25);
   --shadow: 0 10px 20px rgba(0,0,0,0.06), 0 3px 6px rgba(0,0,0,0.05);
@@ -33,7 +33,7 @@ body {
   left: 1rem; top: 1rem;
   width: auto; height: auto;
   padding: .5rem .75rem;
-  background: #333;         /* removed navy */
+  background: #333;
   color: #fff;
   border-radius: .5rem;
   z-index: 1000;
@@ -161,21 +161,21 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
   position: relative;
   background: #fff;
   border-radius: 1rem;
-  border: 1px solid var(--edge);      /* neutral border */
+  border: 1px solid var(--edge);     
   box-shadow: var(--shadow);
   padding: 1.25rem 1.25rem 1rem 1.25rem;
   overflow: hidden;
 }
-.header-card{ padding: 1.25rem; }     /* header boxed too */
+.header-card{ padding: 1.25rem; }      
 
 .card h2 {
   margin-top: .25rem;
-  color: var(--gold); /* solid gold for section titles */
+  color: var(--gold);  
   letter-spacing: 0.02em;
   font-weight: 600;
 }
 .card-edge{
-  display: none;                      /* hide gold edge glow */
+  display: none;
 }
 
 .item + .item{ margin-top: 1rem; }
@@ -188,8 +188,8 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
 
 .item-logo {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 75px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,6 +233,21 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
   font-style: italic;
 }
 
+.sub-meta-company {
+  margin: 0 0 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.job-description {
+  margin-top: 0.35rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-style: normal;
+}
 
 .bullets{
   margin: .5rem 0 0 1rem;
@@ -249,6 +264,12 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
   text-align: center;
 }
 
+.footer-description{
+  color: var(--muted);
+  text-align: center;
+  font-style: italic;
+}
+
 @keyframes pulseGold {
   0%, 100% {
     color: #d4af37;
@@ -257,7 +278,7 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
       0 0 6px rgba(255, 215, 0, 0.15);
   }
   50% {
-    color: #f1cc52; /* slightly brighter but not blinding */
+    color: #f1cc52;
     text-shadow:
       0 0 6px rgba(255, 225, 120, 0.45),
       0 0 10px rgba(255, 215, 0, 0.3);
