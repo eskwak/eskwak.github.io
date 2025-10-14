@@ -2,7 +2,7 @@
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #6b7280;
-  --gold: #f5dc8c; 
+  --gold: #e2ca79; 
   --edge: rgba(0,0,0,0.08);
   --ring: rgba(179,163,105,0.25);
   --shadow: 0 10px 20px rgba(0,0,0,0.06), 0 3px 6px rgba(0,0,0,0.05);
@@ -55,7 +55,7 @@ body {
 
 .header-grid{
   display: grid;
-  grid-template-columns: 190px 1fr;
+  grid-template-columns: 160px 1fr;
   gap: 1.5rem;
   align-items: center;
 }
@@ -83,7 +83,7 @@ body {
   place-items: center;
 }
 .avatar{
-  width: 200px; height: 200px;
+  width: 170px; height: 170px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #fff;
@@ -97,12 +97,11 @@ body {
   font-size: clamp(1.8rem, 3vw, 2.25rem);
   font-weight: 700;
   letter-spacing: 0.01em;
-  color: #d4af37; /* base gold */
-  text-shadow:
-    0 0 3px rgba(255, 215, 0, 0.3),
-    0 0 6px rgba(255, 215, 0, 0.15);
-  animation: pulseGold 3s ease-in-out infinite;
+  color: var(--gold);
+  text-shadow: none;
+  animation: none;
 }
+
 
 .tagline{
   margin: 0 0 1rem 0;
@@ -242,6 +241,21 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
   font-weight: bold;
 }
 
+.sub-meta-project {
+  margin: 0 0 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style:italic;
+  font-weight: normal;
+}
+
+.project-description {
+  margin: 0 0 0 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
 .job-description {
   margin: 0 0 0 0;
   color: var(--text);
@@ -270,17 +284,4 @@ main{ padding: 2rem 0 3rem; display: grid; gap: 1.25rem; }
   font-style: italic;
 }
 
-@keyframes pulseGold {
-  0%, 100% {
-    color: #d4af37;
-    text-shadow:
-      0 0 3px rgba(255, 215, 0, 0.3),
-      0 0 6px rgba(255, 215, 0, 0.15);
-  }
-  50% {
-    color: #f1cc52;
-    text-shadow:
-      0 0 6px rgba(255, 225, 120, 0.45),
-      0 0 10px rgba(255, 215, 0, 0.3);
-  }
-}
+
